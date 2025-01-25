@@ -1,4 +1,7 @@
+import crypto from "node:crypto";
+
 export default class ContaCorrente {
+  private _id: string;
   private _agencia: number;
   private _numero: number;
   private _nomeCliente: string;
@@ -15,6 +18,7 @@ export default class ContaCorrente {
     dataNascimento: Date,
     dataCriacao: Date
   ) {
+    this._id = crypto.randomUUID();
     this._agencia = agencia;
     this._numero = numero;
     this._nomeCliente = nomeCliente;
@@ -24,6 +28,10 @@ export default class ContaCorrente {
     this._saldo = 0;
   }
 
+  public get id() {
+    return this._id;
+  }
+  
   public get agencia() {
     return this._agencia;
   }
