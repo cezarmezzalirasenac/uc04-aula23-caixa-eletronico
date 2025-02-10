@@ -18,7 +18,7 @@ export default class ContaCorrente {
     dataNascimento: Date,
     dataCriacao: Date
   ) {
-    this._id = crypto.randomUUID();
+    this._id = "f3f4690e-8c85-424b-b9b7-6e7f5641bc88";
     this._agencia = agencia;
     this._numero = numero;
     this._nomeCliente = nomeCliente;
@@ -31,7 +31,7 @@ export default class ContaCorrente {
   public get id() {
     return this._id;
   }
-  
+
   public get agencia() {
     return this._agencia;
   }
