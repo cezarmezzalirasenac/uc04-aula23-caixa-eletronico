@@ -86,9 +86,9 @@ contaCorrenteRoutes.post("/auth", (req: Request, res: Response) => {
   res.status(201).send({ token });
 });
 
-// GET /:agencia/:numero
+// GET /:agencia/:numero -> Retorna os dados da conta
 
-// GET /:agencia/:numero/saldo
+// GET /:agencia/:numero/saldo -> Retorna somente o saldo da conta
 
 // PATCH /saldo
 
